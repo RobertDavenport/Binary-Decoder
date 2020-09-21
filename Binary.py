@@ -25,18 +25,19 @@ def binaryConvert(content, length):
         for character in wrapped_content:
 
             int_content = int(character, 2)
-            byte_number = int_content.bit_length() + 6
-            binary_array = int_content.to_bytes(byte_number, "big")
-            ascii_text = binary_array.decode()
-            ascii_text = ascii_text.strip().strip('\x00')
-            if (ascii_text == ""):
-                ascii_text = " "
-            text = text + ascii_text
+            #byte_number = int_content.bit_length() + 6
+            #binary_array = int_content.to_bytes(byte_number, "big")
+            #ascii_text = binary_array.decode()
+            #ascii_text = ascii_text.strip().strip('\x00')
+            #if (ascii_text == ""):
+                #ascii_text = " "
+            text += chr(int)
+            
 
-            # print(character)
-            # print(int_content)
-            # print(byte_number)
-            # print(binary_array)
+            #print(chr(int_content))
+            #print(int_content)
+            #print(byte_number)
+            #print(binary_array)
             # print(ascii_text)   
 
         print("=============================================")
