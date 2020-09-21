@@ -31,8 +31,7 @@ def binaryConvert(content, length):
             #ascii_text = ascii_text.strip().strip('\x00')
             #if (ascii_text == ""):
                 #ascii_text = " "
-            text += chr(int)
-            
+            text += chr(int_content)
 
             #print(chr(int_content))
             #print(int_content)
